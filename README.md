@@ -8,6 +8,7 @@ It features :
 * RFM12b / RFM69CW Radio module (pin-compatible)
 * On-board ceramic antenna
 * CAT24M010TS EEPROM (128kByte)
+* Breakout to I2C, SPI and UART-TXD
 * Sensors
   * MPU-9250 Movement sensor (9DoF : accelerometers, gyros and magnetometer)
   * TMP102 Temperature and Humidity
