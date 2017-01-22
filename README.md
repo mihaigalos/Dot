@@ -9,6 +9,8 @@ It features :
 * On-board ceramic antenna
 * CAT24M010TS EEPROM (128kByte)
 * Breakout to I2C, SPI and UART-TXD
+* Antenna tuning pads for antenna calibration
+* uFL connector for external antenna support 
 * Sensors
   * MPU-9250 Movement sensor (9DoF : accelerometers, gyros and magnetometer)
   * TMP102 Temperature and Humidity
