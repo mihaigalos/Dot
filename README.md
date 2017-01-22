@@ -1,6 +1,6 @@
 # Dot
 
-The Dot is a carrier aimed at gathering sensor data from a variety of sensors and sending them over radio.
+The Dot is a carrier board designed in Eagle, aimed at gathering sensor data from a variety of sensors and sending them over radio.
 Its small design and supply over a coin cell make it ideal for deployment anywhere.
 
 It features :
