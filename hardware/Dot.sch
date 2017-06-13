@@ -731,56 +731,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-OPL-Antenna">
-<packages>
-<package name="ANT2-SMD-9.5X2X1.2MM">
-<smd name="1" x="-4.5" y="0" dx="1.5" dy="1.8" layer="1"/>
-<smd name="2" x="4.5" y="0" dx="1.5" dy="1.8" layer="1"/>
-<wire x1="-3.9" y1="1" x2="3.9" y2="1" width="0.127" layer="21"/>
-<wire x1="4.75" y1="1" x2="4.75" y2="-1" width="0.127" layer="51"/>
-<wire x1="3.9" y1="-1" x2="-3.9" y2="-1" width="0.127" layer="21"/>
-<wire x1="-4.75" y1="-1" x2="-4.75" y2="1" width="0.127" layer="51"/>
-<text x="-1.905" y="1.27" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
-<rectangle x1="-4.75" y1="-1.05" x2="4.75" y2="1.05" layer="39"/>
-<circle x="-5.715" y="0" radius="0.381" width="0" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SMD-BUILT-IN-ANTENNA-2.4GHZ">
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.1524" layer="94"/>
-<pin name="1" x="-7.62" y="0" length="short"/>
-<pin name="2" x="7.62" y="0" length="short" rot="R180"/>
-<text x="-2.54" y="1.905" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SMD-BUILT-IN-ANTENNA-2.4GHZ(2P-9.5X2.1MM)" prefix="ANT" uservalue="yes">
-<description>318010004</description>
-<gates>
-<gate name="G$1" symbol="SMD-BUILT-IN-ANTENNA-2.4GHZ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ANT2-SMD-9.5X2X1.2MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="an9520" constant="no"/>
-<attribute name="VALUE" value="AN9520"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply2">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
 GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -11615,299 +11565,6 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Coils">
-<description>&lt;h3&gt;SparkFun Coils&lt;/h3&gt;
-In this library you'll find magnetics.
-
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;Inductors&lt;/li&gt;
-&lt;li&gt;Ferrite Beads&lt;/li&gt;
-&lt;li&gt;Transformers&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-
-&lt;br&gt;
-&lt;p&gt;We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.&lt;/p&gt;</description>
-<packages>
-<package name="CR75">
-<description>&lt;h3&gt;4600 series footprint&lt;/h3&gt;
-&lt;p&gt;Not messing with it since production uses it. Origin unknown but loosely based on this &lt;a href="http://www.murata-ps.com/data/magnetics/kmp_4600.pdf"&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
-<wire x1="-4.025" y1="3.65" x2="3.975" y2="3.65" width="0.127" layer="21"/>
-<wire x1="3.975" y1="3.65" x2="3.975" y2="2.55" width="0.127" layer="21"/>
-<wire x1="-4.025" y1="3.65" x2="-4.025" y2="2.55" width="0.127" layer="21"/>
-<wire x1="-4.025" y1="-3.65" x2="3.975" y2="-3.65" width="0.127" layer="21"/>
-<wire x1="3.975" y1="-3.65" x2="3.975" y2="-2.55" width="0.127" layer="21"/>
-<wire x1="-4.025" y1="-3.65" x2="-4.025" y2="-2.55" width="0.127" layer="21"/>
-<smd name="P$1" x="-3.025" y="0" dx="4.7" dy="1.75" layer="1" rot="R90"/>
-<smd name="P$2" x="3.025" y="0" dx="4.7" dy="1.75" layer="1" rot="R90"/>
-<text x="0" y="3.81" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.81" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="SRN6045">
-<description>&lt;h3&gt;SRN6045 series  footprint&lt;/h3&gt;
-&lt;p&gt;Roughly based on the recommendation in this &lt;a href="http://www.mouser.com/ds/2/54/RN6045-778135.pdf"&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
-<smd name="1" x="-2.175" y="0" dx="6" dy="2.5" layer="1" rot="R90"/>
-<smd name="2" x="2.125" y="0" dx="6" dy="2.5" layer="1" rot="R90"/>
-<wire x1="-2.175" y1="-3" x2="-3.175" y2="-2" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-2" x2="-3.175" y2="2" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="2" x2="-2.175" y2="3" width="0.127" layer="51"/>
-<wire x1="-2.175" y1="3" x2="2.125" y2="3" width="0.127" layer="51"/>
-<wire x1="2.125" y1="3" x2="3.125" y2="2" width="0.127" layer="51"/>
-<wire x1="3.125" y1="2" x2="3.125" y2="-2" width="0.127" layer="51"/>
-<wire x1="3.125" y1="-2" x2="2.125" y2="-3" width="0.127" layer="51"/>
-<wire x1="2.125" y1="-3" x2="-2.175" y2="-3" width="0.127" layer="51"/>
-<text x="0" y="3.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.254" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-0.762" y1="2.969" x2="0.762" y2="2.969" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-3" x2="0.762" y2="-3" width="0.1524" layer="21"/>
-</package>
-<package name="INDUCTOR_4.7UH">
-<description>&lt;h3&gt;CDRH2D18/HPNP footprint&lt;/h3&gt;
-&lt;p&gt;Recommended footprint for CDRH2D18/HPNP series inductors from &lt;a href="http://products.sumida.com/products/pdf/CDRH2D18HP.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-<wire x1="-1.2" y1="0.9" x2="-0.6" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-0.6" y1="1.5" x2="0.6" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="1.5" x2="1.2" y2="0.9" width="0.2032" layer="21"/>
-<wire x1="-1.2" y1="-0.9" x2="-0.6783" y2="-1.3739" width="0.2032" layer="21"/>
-<wire x1="-0.6783" y1="-1.3739" x2="0.6783" y2="-1.3739" width="0.2032" layer="21" curve="85.420723"/>
-<wire x1="0.6783" y1="-1.3739" x2="1.2" y2="-0.9" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-0.6" x2="-0.7071" y2="-1.3929" width="0.03" layer="51"/>
-<wire x1="-0.7071" y1="-1.3929" x2="0.7071" y2="-1.3929" width="0.03" layer="51" curve="90"/>
-<wire x1="0.7071" y1="-1.3929" x2="1.5" y2="-0.6" width="0.03" layer="51"/>
-<wire x1="1.5" y1="-0.6" x2="1.5" y2="0.6" width="0.03" layer="51"/>
-<wire x1="1.5" y1="0.6" x2="0.6" y2="1.5" width="0.03" layer="51"/>
-<wire x1="0.6" y1="1.5" x2="-0.6" y2="1.5" width="0.03" layer="51"/>
-<wire x1="-0.6" y1="1.5" x2="-1.5" y2="0.6" width="0.03" layer="51"/>
-<wire x1="-1.5" y1="0.6" x2="-1.5" y2="-0.6" width="0.03" layer="51"/>
-<smd name="P$1" x="-1.5" y="0" dx="1.3" dy="1.3" layer="1" rot="R90"/>
-<smd name="P$2" x="1.5" y="0" dx="1.3" dy="1.3" layer="1" rot="R90"/>
-<text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_SDR1307">
-<description>&lt;h3&gt;SDR1307 series footprint&lt;/h3&gt;
-&lt;p&gt;Footprint based on recommendation from &lt;a href="https://www.bourns.com/pdfs/SDR1307.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="4.6" dx="14" dy="4.75" layer="1"/>
-<smd name="P$2" x="0" y="-4.6" dx="14" dy="4.75" layer="1"/>
-<wire x1="-6.5" y1="1.5" x2="-6.5" y2="-1.5" width="0.3048" layer="21"/>
-<wire x1="6.5" y1="1.5" x2="6.5" y2="-1.5" width="0.3048" layer="21"/>
-<text x="0" y="7.246" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-7.23" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="CR54">
-<description>&lt;h3&gt;CR54 footprint&lt;/h3&gt;
-&lt;p&gt;These vary by manufacturer, but we used the NPIS54LS footprint from &lt;a href="http://www.niccomp.com/catalog/npis_ls.pdf"&gt;here&lt;/a&gt;.</description>
-<wire x1="2.6" y1="2.6" x2="-2.6" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-2.6" y1="2.6" x2="-2.6" y2="-2.6" width="0.127" layer="51"/>
-<wire x1="-2.6" y1="-2.6" x2="2.6" y2="-2.6" width="0.127" layer="51"/>
-<wire x1="2.6" y1="-2.6" x2="2.6" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-2.87" y1="2.6" x2="-2.87" y2="-2.6" width="0.2032" layer="21"/>
-<wire x1="-2.6" y1="-2.87" x2="2.6" y2="-2.87" width="0.2032" layer="21"/>
-<wire x1="2.87" y1="-2.6" x2="2.87" y2="2.6" width="0.2032" layer="21"/>
-<wire x1="2.6" y1="2.87" x2="-2.6" y2="2.87" width="0.2032" layer="21"/>
-<smd name="P$1" x="0" y="1.85" dx="4.2" dy="1.4" layer="1"/>
-<smd name="P$2" x="0" y="-1.85" dx="4.2" dy="1.4" layer="1"/>
-<text x="0" y="3.077" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-3.048" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<rectangle x1="-2.1" y1="1.15" x2="2.1" y2="2.55" layer="51"/>
-<rectangle x1="-2.1" y1="-2.55" x2="2.1" y2="-1.15" layer="51"/>
-<wire x1="-2.87" y1="-2.6" x2="-2.6" y2="-2.87" width="0.2032" layer="21"/>
-<wire x1="2.6" y1="-2.87" x2="2.87" y2="-2.6" width="0.2032" layer="21"/>
-<wire x1="-2.87" y1="2.6" x2="-2.6" y2="2.87" width="0.2032" layer="21"/>
-<wire x1="2.6" y1="2.87" x2="2.87" y2="2.6" width="0.2032" layer="21"/>
-</package>
-<package name="0805">
-<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.0508" layer="39"/>
-<wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
-<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
-<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
-</package>
-<package name="0603">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0402">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-</packages>
-<symbols>
-<symbol name="INDUCTOR">
-<description>&lt;h3&gt;Inductors&lt;/h3&gt;
-&lt;p&gt;Resist changes in electrical current. Basically a coil of wire.&lt;/p&gt;</description>
-<text x="1.27" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="1.27" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94" curve="-180"/>
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94" curve="-180"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="INDUCTOR" prefix="L">
-<description>&lt;h3&gt;Inductors&lt;/h3&gt;
-&lt;p&gt;Resist changes in electrical current. Basically a coil of wire.&lt;/p&gt;
-&lt;p&gt;SparkFun Products:
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier - HX711&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13613"&gt;IOIO-OTG - V2.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-CR75-68UH" package="CR75">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-09739"/>
-<attribute name="VALUE" value="68µH/±20%/1.05A"/>
-</technology>
-</technologies>
-</device>
-<device name="-SRN6045-33UH" package="SRN6045">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-11627"/>
-<attribute name="VALUE" value="33µH/±20%/1.4A"/>
-</technology>
-</technologies>
-</device>
-<device name="-CDRH-4.7UH" package="INDUCTOR_4.7UH">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-10146"/>
-<attribute name="VALUE" value="4.7µH/±30%/1.2A"/>
-</technology>
-</technologies>
-</device>
-<device name="-SDR13-27UH" package="INDUCTOR_SDR1307">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-12529"/>
-<attribute name="VALUE" value="27µH/±20%/3.3A"/>
-</technology>
-</technologies>
-</device>
-<device name="-CR54-3.3UH" package="CR54">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-11157"/>
-<attribute name="VALUE" value="3.3µH/±30%/3.4A"/>
-</technology>
-</technologies>
-</device>
-<device name="-CR54-47UH" package="CR54">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-10789"/>
-<attribute name="VALUE" value="47µH/±30%/750mA"/>
-</technology>
-</technologies>
-</device>
-<device name="-0805-3.3UH" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-13076"/>
-<attribute name="VALUE" value="3.3µH/±20%/450mA"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-33NH" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-07874"/>
-<attribute name="VALUE" value="33nH/±5%/500mA"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402-3.9NH" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-13457" constant="no"/>
-<attribute name="VALUE" value="3.9NH" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Seeed-OPL-sensor">
 <packages>
 <package name="LGA7-1.5-3.8X3.6MM">
@@ -12164,10 +11821,10 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <wire x1="-0.75" y1="0.75" x2="-0.75" y2="-0.75" width="0.1016" layer="51"/>
 <wire x1="-0.55" y1="0.7" x2="-0.55" y2="-0.7" width="0.1016" layer="51"/>
 <wire x1="0.55" y1="-0.7" x2="0.55" y2="0.7" width="0.1016" layer="51"/>
-<smd name="1" x="-0.475" y="0.9" dx="0.65" dy="1.2" layer="1" stop="no" cream="no"/>
+<smd name="1" x="0.4775" y="0.9" dx="0.65" dy="1.2" layer="1" stop="no" cream="no"/>
 <smd name="2" x="-0.475" y="-0.9" dx="0.65" dy="1.2" layer="1" stop="no" cream="no"/>
 <smd name="3" x="0.475" y="-0.9" dx="0.65" dy="1.2" layer="1" stop="no" cream="no"/>
-<smd name="4" x="0.475" y="0.9" dx="0.65" dy="1.2" layer="1" stop="no" cream="no"/>
+<smd name="4" x="-0.4775" y="0.9" dx="0.65" dy="1.2" layer="1" stop="no" cream="no"/>
 <text x="-0.762" y="1.778" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-3.048" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.85" y1="0.25" x2="-0.1" y2="1.55" layer="29"/>
@@ -12271,6 +11928,58 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-OPL-Capacitor">
+<packages>
+<package name="AVX-A">
+<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="-2.0955" y1="-0.8255" x2="-2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="0" x2="0.0635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.1905" y1="-0.254" x2="-0.1905" y2="0.254" width="0.127" layer="21"/>
+<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
+<text x="-1.905" y="1.016" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="-2.159" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.159" y1="-0.889" x2="2.159" y2="0.889" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP-POLAR">
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.508" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.508" layer="94" curve="47.924978"/>
+<wire x1="1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="0" size="1.27" layer="93" ratio="10">+</text>
+<text x="-6.35" y="3.81" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="1.27" y="3.81" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<text x="1.27" y="0" size="1.27" layer="93" ratio="10">-</text>
+<pin name="+" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
+<pin name="-" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TANTALUM-SMD-100UF-6.3V(AVX-A)" prefix="C" uservalue="yes">
+<description>302020003</description>
+<gates>
+<gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AVX-A">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="TLJA107M006R0800" constant="no"/>
+<attribute name="VALUE" value="100uf"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12282,7 +11991,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </classes>
 <parts>
 <part name="U1" library="Seeed-OPL-ic" deviceset="MCU-ATMEGA328P-MU(QFN32)" device="" value="ATMEGA328P-MU-QFN32"/>
-<part name="ANT1" library="Seeed-OPL-Antenna" deviceset="SMD-BUILT-IN-ANTENNA-2.4GHZ(2P-9.5X2.1MM)" device="" value="AN9520"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
@@ -12306,7 +12014,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0603"/>
 <part name="BAT1" library="Battery" deviceset="BATTERY" device="20PTH"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
@@ -12341,10 +12048,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="C5" library="resistor" deviceset="C-EU" device="C0603"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0603"/>
-<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
-<part name="L1" library="SparkFun-Coils" deviceset="INDUCTOR" device="-0805-3.3UH" value="3.3µH/±20%/450mA"/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X10" device=""/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="130Ω"/>
@@ -12367,6 +12070,10 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED1" library="led" deviceset="GM1WA55311A" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
+<part name="C9" library="Seeed-OPL-Capacitor" deviceset="TANTALUM-SMD-100UF-6.3V(AVX-A)" device="" value="100uf"/>
+<part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
+<part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 </parts>
 <sheets>
 <sheet>
@@ -12412,10 +12119,12 @@ Humidity</text>
 <text x="175.26" y="0" size="1.016" layer="91" align="center">TMP102 or TMP112 (high acc +/-0.5°)</text>
 <text x="43.18" y="88.9" size="1.778" layer="91">use AT45DB641E-MHN-Y for starndard page size (1056b/page)
 or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
+<text x="-24.13" y="50.8" size="1.27" layer="91">Blue</text>
+<text x="-7.62" y="50.8" size="1.27" layer="91" rot="R90">Green</text>
+<text x="1.778" y="50.8" size="1.27" layer="91">Red</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
-<instance part="ANT1" gate="G$1" x="292.1" y="91.44" rot="R90"/>
 <instance part="SUPPLY2" gate="GND" x="27.94" y="157.48"/>
 <instance part="SUPPLY3" gate="GND" x="144.78" y="38.1" rot="R270"/>
 <instance part="SUPPLY4" gate="GND" x="144.78" y="81.28" rot="R270"/>
@@ -12442,7 +12151,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <instance part="SUPPLY1" gate="GND" x="93.98" y="134.62" rot="R90"/>
 <instance part="X1" gate="G$1" x="297.18" y="68.58" rot="R180"/>
 <instance part="SUPPLY5" gate="GND" x="302.26" y="71.12"/>
-<instance part="SJ2" gate="1" x="292.1" y="76.2" rot="R90"/>
 <instance part="R4" gate="G$1" x="66.04" y="157.48" rot="R90"/>
 <instance part="BAT1" gate="G$1" x="27.94" y="165.1" rot="R270"/>
 <instance part="SJ1" gate="1" x="50.8" y="40.64" rot="R180"/>
@@ -12477,10 +12185,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <instance part="+3V13" gate="G$1" x="33.02" y="-17.78"/>
 <instance part="C4" gate="G$1" x="33.02" y="-22.86"/>
 <instance part="SUPPLY13" gate="GND" x="33.02" y="-30.48"/>
-<instance part="C5" gate="G$1" x="350.52" y="53.34"/>
-<instance part="C7" gate="G$1" x="365.76" y="53.34"/>
-<instance part="SUPPLY16" gate="GND" x="360.68" y="43.18"/>
-<instance part="L1" gate="G$1" x="358.14" y="55.88" rot="R90"/>
 <instance part="SUPPLY19" gate="GND" x="297.18" y="124.46"/>
 <instance part="JP1" gate="A" x="76.2" y="134.62"/>
 <instance part="R5" gate="G$1" x="0" y="60.96" rot="R270"/>
@@ -12503,6 +12207,10 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <instance part="+3V2" gate="G$1" x="142.24" y="76.2" rot="R90"/>
 <instance part="LED1" gate="G$1" x="-10.16" y="73.66"/>
 <instance part="SUPPLY28" gate="GND" x="45.72" y="-35.56"/>
+<instance part="C9" gate="G$1" x="10.16" y="162.56" rot="R270"/>
+<instance part="+3V20" gate="G$1" x="10.16" y="172.72"/>
+<instance part="SUPPLY29" gate="GND" x="10.16" y="156.21"/>
+<instance part="SJ2" gate="1" x="284.48" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -12613,16 +12321,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<wire x1="350.52" y1="48.26" x2="350.52" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="45.72" x2="360.68" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="45.72" x2="365.76" y2="45.72" width="0.1524" layer="91"/>
-<junction x="360.68" y="45.72"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="45.72" x2="365.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SW1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 <wire x1="297.18" y1="127" x2="281.94" y2="127" width="0.1524" layer="91"/>
@@ -12654,6 +12352,10 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="60.96" y1="-27.94" x2="45.72" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-27.94" x2="45.72" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY28" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="-"/>
+<pinref part="SUPPLY29" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -12955,6 +12657,11 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="-15.24" y1="76.2" x2="-10.16" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="76.2" x2="-10.16" y2="78.74" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="+3V20" gate="G$1" pin="+3V3"/>
+<pinref part="C9" gate="G$1" pin="+"/>
+<wire x1="10.16" y1="170.18" x2="10.16" y2="166.37" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ADCENA" class="0">
 <segment>
@@ -13083,31 +12790,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <label x="164.846" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="ANT" class="0">
-<segment>
-<pinref part="SJ2" gate="1" pin="2"/>
-<pinref part="ANT1" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="83.82" x2="292.1" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="350.52" y1="55.88" x2="342.9" y2="55.88" width="0.1524" layer="91"/>
-<label x="342.9" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="353.06" y1="55.88" x2="350.52" y2="55.88" width="0.1524" layer="91"/>
-<junction x="350.52" y="55.88"/>
-</segment>
-</net>
-<net name="ANT_1" class="0">
-<segment>
-<pinref part="SJ2" gate="1" pin="1"/>
-<pinref part="X1" gate="G$1" pin="SIGNAL"/>
-<wire x1="292.1" y1="71.12" x2="292.1" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ANT"/>
-<wire x1="292.1" y1="68.58" x2="276.86" y2="68.58" width="0.1524" layer="91"/>
-<junction x="292.1" y="68.58"/>
-</segment>
-</net>
 <net name="PUSH" class="0">
 <segment>
 <pinref part="SW1" gate="G$1" pin="1"/>
@@ -13192,13 +12874,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="U4" gate="G$1" pin="REGOUT"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="-30.48" x2="50.8" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="363.22" y1="55.88" x2="365.76" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -13296,6 +12971,20 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="-20.32" y1="68.58" x2="-20.32" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="ANT"/>
+<pinref part="SJ2" gate="1" pin="1"/>
+<wire x1="276.86" y1="68.58" x2="279.4" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="SJ2" gate="1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="SIGNAL"/>
+<wire x1="289.56" y1="68.58" x2="292.1" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -13308,7 +12997,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <text x="48.26" y="73.66" size="1.27" layer="91">1000100D</text>
 <text x="5.08" y="68.58" size="1.27" layer="91">UV</text>
 <text x="27.94" y="68.58" size="1.27" layer="91">SI1145</text>
-<text x="48.26" y="68.58" size="1.27" layer="91">0110000D</text>
+<text x="48.26" y="68.58" size="1.27" layer="91">1100000D</text>
 <text x="5.08" y="63.5" size="1.27" layer="91">Temperature</text>
 <text x="27.94" y="63.5" size="1.27" layer="91">TMP102/112</text>
 <text x="48.26" y="63.5" size="1.27" layer="91">100100XD</text>
@@ -13326,8 +13015,22 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <text x="5.08" y="48.26" size="1.27" layer="91">EEPROM 1Mbit</text>
 <text x="27.94" y="48.26" size="1.27" layer="91">CAT24M01 </text>
 <text x="48.26" y="48.26" size="1.27" layer="91">1010XXXD</text>
-<text x="76.2" y="48.26" size="1.27" layer="91">0x0A / yes</text>
+<text x="76.2" y="48.26" size="1.27" layer="91">0x50 &amp; 0x51 (a16 bit) / yes</text>
 <text x="48.26" y="78.74" size="1.016" layer="91">D = Direction</text>
+<text x="76.2" y="58.42" size="1.27" layer="91">0x68 / yes</text>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="-13.97" y="88.9" size="2.54" layer="91">Diff to v1.3</text>
+<text x="-13.462" y="80.01" size="2.1844" layer="91">Corrected RGB Led layout.</text>
+<text x="-12.7" y="73.66" size="2.1844" layer="91">Added 100uF Cap. Should soften discharge of batetry to peaks up to 30mA for 1ms. Reacharges in 175ms.</text>
 </plain>
 <instances>
 </instances>
