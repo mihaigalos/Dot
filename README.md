@@ -22,3 +22,5 @@ Features :
   
 # License
 The Dot is Open Hardware. Use it at your own whim and risk, please share if you find it useful.
+
+![alt text](https://github.com/mihaigalos/Dot/images/oshw.jpg "Open Source Hardware")
