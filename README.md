@@ -23,4 +23,6 @@ Features :
 # License
 The Dot is Open Hardware. Use it at your own whim and risk, please share if you find it useful.
 
-![alt tag](images/oshw.jpg?raw=true "Open Source Hardware")
+<p align="center"> 
+<img src="images/oshw.jpg">
+</p>
