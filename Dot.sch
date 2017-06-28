@@ -12078,6 +12078,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0603"/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="SJ3" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
 </parts>
 <sheets>
 <sheet>
@@ -12110,7 +12111,7 @@ SJ4: select address of Temperature Sensor</text>
 <text x="-20.32" y="15.24" size="3.81" layer="95" align="center">Actors
 RGB Led, Buzzer</text>
 <text x="340.36" y="10.16" size="3.81" layer="95">Antenna Tuning</text>
-<text x="33.02" y="106.68" size="3.81" layer="95">Power and Headers</text>
+<text x="43.18" y="106.68" size="3.81" layer="95">Power and Headers</text>
 <text x="238.76" y="106.68" size="3.81" layer="95">I2C, Reset and Pullups &amp; Push Button(s)</text>
 <text x="-17.78" y="35.56" size="1.778" layer="91">Values @ 20mA.</text>
 <text x="182.88" y="-55.88" size="1.778" layer="91">Barometric pressure
@@ -12220,6 +12221,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <instance part="R1" gate="G$1" x="-33.02" y="134.62" rot="R90"/>
 <instance part="SUPPLY16" gate="GND" x="-33.02" y="127"/>
 <instance part="R9" gate="G$1" x="-33.02" y="147.32" rot="R90"/>
+<instance part="SJ3" gate="1" x="17.78" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -12661,6 +12663,10 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="U$4" gate="G$1" pin="OUT"/>
 <pinref part="+3V19" gate="G$1" pin="+3V3"/>
 <wire x1="30.48" y1="142.24" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="22.86" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="114.3" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<junction x="30.48" y="134.62"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVCC"/>
@@ -12960,6 +12966,10 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="7.62" y1="132.08" x2="7.62" y2="134.62" width="0.1524" layer="91"/>
 <junction x="7.62" y="134.62"/>
 <label x="5.08" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="7.62" y1="132.08" x2="7.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
+<junction x="7.62" y="132.08"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
