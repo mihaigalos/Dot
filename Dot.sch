@@ -12079,6 +12079,8 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0603"/>
 <part name="SJ3" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="SJ6" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
 </parts>
 <sheets>
 <sheet>
@@ -12192,7 +12194,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <instance part="C4" gate="G$1" x="33.02" y="-22.86"/>
 <instance part="SUPPLY13" gate="GND" x="33.02" y="-30.48"/>
 <instance part="SUPPLY19" gate="GND" x="297.18" y="124.46"/>
-<instance part="JP1" gate="A" x="76.2" y="134.62"/>
+<instance part="JP1" gate="A" x="78.74" y="134.62"/>
 <instance part="R5" gate="G$1" x="0" y="60.96" rot="R270"/>
 <instance part="R6" gate="G$1" x="-20.32" y="60.96" rot="R270"/>
 <instance part="R8" gate="G$1" x="-10.16" y="60.96" rot="R270"/>
@@ -12222,6 +12224,8 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <instance part="SUPPLY16" gate="GND" x="-33.02" y="127"/>
 <instance part="R9" gate="G$1" x="-33.02" y="147.32" rot="R90"/>
 <instance part="SJ3" gate="1" x="17.78" y="114.3"/>
+<instance part="C7" gate="G$1" x="66.04" y="129.54" rot="R90"/>
+<instance part="SJ6" gate="1" x="-43.18" y="147.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12259,7 +12263,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="73.66" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="5"/>
 </segment>
 <segment>
@@ -12425,11 +12429,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </net>
 <net name="RST" class="0">
 <segment>
-<label x="60.96" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="60.96" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="7"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PC6(PCINT14/!RESET)"/>
 <wire x1="195.58" y1="43.18" x2="198.12" y2="43.18" width="0.1524" layer="91"/>
 <label x="198.12" y="43.18" size="1.27" layer="95" xref="yes"/>
@@ -12438,6 +12437,11 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="R7" gate="B" pin="1"/>
 <wire x1="269.24" y1="154.94" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
 <label x="251.46" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="60.96" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -12708,7 +12712,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <label x="60.96" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="60.96" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="10"/>
 </segment>
 <segment>
@@ -12725,7 +12729,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <label x="60.96" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="60.96" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="9"/>
 </segment>
 <segment>
@@ -12747,7 +12751,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="73.66" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 <label x="60.96" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -12758,7 +12762,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <label x="198.12" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
 <label x="60.96" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="A" pin="8"/>
 </segment>
@@ -12828,7 +12832,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="73.66" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
 <label x="60.96" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -12914,7 +12918,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="73.66" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 <label x="60.96" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -12938,7 +12942,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="73.66" y1="142.24" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="142.24" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
 <label x="60.96" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
@@ -12978,6 +12982,8 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="-33.02" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 <junction x="-33.02" y="142.24"/>
 <label x="-27.94" y="142.24" size="1.27" layer="95" xref="yes"/>
+<pinref part="SJ6" gate="1" pin="1"/>
+<wire x1="-43.18" y1="142.24" x2="-33.02" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -13022,10 +13028,21 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="152.4" x2="-33.02" y2="154.94" width="0.1524" layer="91"/>
 <label x="-33.02" y="154.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="SJ6" gate="1" pin="2"/>
+<wire x1="-43.18" y1="152.4" x2="-33.02" y2="152.4" width="0.1524" layer="91"/>
+<junction x="-33.02" y="152.4"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="73.66" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
+<label x="86.36" y="132.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="7"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="129.54" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
