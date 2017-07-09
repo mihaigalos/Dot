@@ -12574,12 +12574,16 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="297.18" y1="144.78" x2="297.18" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R7" gate="C" pin="2"/>
 <wire x1="297.18" y1="149.86" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="154.94" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="154.94" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="160.02" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="149.86" x2="297.18" y2="149.86" width="0.1524" layer="91"/>
 <junction x="297.18" y="149.86"/>
 <pinref part="R7" gate="B" pin="2"/>
 <wire x1="279.4" y1="154.94" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
 <junction x="297.18" y="154.94"/>
+<pinref part="R7" gate="A" pin="2"/>
+<wire x1="279.4" y1="160.02" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
+<junction x="297.18" y="160.02"/>
 </segment>
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
@@ -12843,18 +12847,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="185.42" y1="-17.78" x2="203.2" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TEMP_ALERT" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="ALERT"/>
-<wire x1="185.42" y1="-15.24" x2="187.96" y2="-15.24" width="0.1524" layer="91"/>
-<label x="187.96" y="-15.24" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
-<wire x1="195.58" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
-<label x="198.12" y="81.28" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="MOVE_INT" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="INT"/>
@@ -12865,30 +12857,6 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2PCINT10)"/>
 <wire x1="195.58" y1="53.34" x2="198.12" y2="53.34" width="0.1524" layer="91"/>
 <label x="198.12" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="INT_RGB" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="!INT"/>
-<wire x1="368.3" y1="-30.48" x2="370.84" y2="-30.48" width="0.1524" layer="91"/>
-<label x="370.84" y="-30.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PB6(XTAL1/TOSC1/PCINT6)"/>
-<wire x1="195.58" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
-<label x="198.12" y="68.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="INT_UV" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="INT"/>
-<wire x1="264.16" y1="-30.48" x2="261.62" y2="-30.48" width="0.1524" layer="91"/>
-<label x="261.62" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2/PCINT7)"/>
-<wire x1="195.58" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
-<label x="198.12" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -13043,6 +13011,33 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <pinref part="JP1" gate="A" pin="7"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="129.54" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INT_MULTIPLE" class="0">
+<segment>
+<pinref part="R7" gate="A" pin="1"/>
+<wire x1="269.24" y1="160.02" x2="251.46" y2="160.02" width="0.1524" layer="91"/>
+<label x="251.46" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2/PCINT7)"/>
+<wire x1="195.58" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
+<label x="198.12" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="ALERT"/>
+<wire x1="185.42" y1="-15.24" x2="187.96" y2="-15.24" width="0.1524" layer="91"/>
+<label x="187.96" y="-15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="INT"/>
+<wire x1="264.16" y1="-30.48" x2="261.62" y2="-30.48" width="0.1524" layer="91"/>
+<label x="261.62" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="!INT"/>
+<wire x1="368.3" y1="-30.48" x2="370.84" y2="-30.48" width="0.1524" layer="91"/>
+<label x="370.84" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
