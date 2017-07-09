@@ -18,10 +18,10 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -164,7 +164,7 @@
 <text x="10.57075625" y="4.37185" size="0.8128" layer="21">9DoF</text>
 <rectangle x1="1.14655625" y1="21.454109375" x2="4.1996375" y2="24.524965625" layer="1"/>
 <text x="2.69341875" y="20.704809375" size="1.016" layer="21" rot="SR180" align="center">HexID</text>
-<rectangle x1="1.103378125" y1="21.63445" x2="4.153915625" y2="24.69515" layer="29"/>
+<rectangle x1="1.13665" y1="21.459775" x2="4.1871875" y2="24.520475" layer="29"/>
 <text x="1.2024375" y="4.67995" size="0.8128" layer="21">SDA</text>
 <text x="3.783075" y="4.21513125" size="0.8128" layer="21">SCL</text>
 <text x="5.86905" y="4.76618125" size="0.8128" layer="21">3V3</text>
@@ -180,18 +180,17 @@
 <rectangle x1="23.838665625" y1="1.27025" x2="25.108665625" y2="2.41325" layer="30"/>
 <circle x="4.627728125" y="26.889678125" radius="0.161746875" width="0.4064" layer="21"/>
 <rectangle x1="23.837315625" y1="1.269490625" x2="25.110390625" y2="2.412390625" layer="1"/>
-<hole x="21.121140625" y="10.7823" drill="0.6"/>
-<hole x="21.121140625" y="11.782375" drill="0.6"/>
-<hole x="21.121140625" y="12.776225" drill="0.6"/>
-<hole x="21.127390625" y="13.782571875" drill="0.6"/>
-<hole x="21.127390625" y="14.776425" drill="0.6"/>
-<hole x="21.110371875" y="15.801771875" drill="0.6"/>
-<hole x="21.12289375" y="16.826890625" drill="0.6"/>
-<hole x="21.104121875" y="17.826990625" drill="0.6"/>
-<hole x="21.104121875" y="18.827065625" drill="0.6"/>
-<hole x="21.104121875" y="19.820915625" drill="0.6"/>
-<hole x="21.110371875" y="20.8272625" drill="0.6"/>
-<hole x="21.110371875" y="21.821115625" drill="0.6"/>
+<hole x="21.960559375" y="10.504984375" drill="0.6"/>
+<hole x="21.960559375" y="11.498834375" drill="0.6"/>
+<hole x="21.966809375" y="12.50518125" drill="0.6"/>
+<hole x="21.966809375" y="13.499034375" drill="0.6"/>
+<hole x="21.949790625" y="14.52438125" drill="0.6"/>
+<hole x="21.9623125" y="15.5495" drill="0.6"/>
+<hole x="21.943540625" y="16.5496" drill="0.6"/>
+<hole x="21.943540625" y="17.549675" drill="0.6"/>
+<hole x="21.943540625" y="18.543525" drill="0.6"/>
+<hole x="21.949790625" y="19.549871875" drill="0.6"/>
+<hole x="21.949790625" y="20.543725" drill="0.6"/>
 <rectangle x1="18.788240625" y1="3.0329875" x2="19.855040625" y2="3.0583875" layer="22" rot="R90"/>
 <rectangle x1="19.308940625" y1="4.0616875" x2="19.334340625" y2="4.0870875" layer="22" rot="R90"/>
 <rectangle x1="19.308940625" y1="4.2648875" x2="19.334340625" y2="4.2902875" layer="22" rot="R90"/>
@@ -2787,9 +2786,11 @@
 <rectangle x1="25.201740625" y1="6.3222875" x2="25.328740625" y2="6.3476875" layer="22" rot="R90"/>
 <rectangle x1="25.201740625" y1="6.5254875" x2="25.328740625" y2="6.5508875" layer="22" rot="R90"/>
 <rectangle x1="24.655640625" y1="7.5541875" x2="25.874840625" y2="7.5795875" layer="22" rot="R90"/>
-<text x="24.826875" y="17.405325" size="1.016" layer="22" rot="MR270">Mihai Galos
+<text x="25.14960625" y="17.378428125" size="1.016" layer="22" rot="MR270">Mihai Galos
 10.2017</text>
 <text x="9.98410625" y="28.805734375" size="0.6096" layer="21" rot="SR180">RxD</text>
+<hole x="21.956725" y="21.560003125" drill="0.6"/>
+<hole x="21.956725" y="22.55385625" drill="0.6"/>
 </plain>
 <libraries>
 <library name="SparkFun">
