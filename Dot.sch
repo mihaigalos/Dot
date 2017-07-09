@@ -12446,14 +12446,14 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 </net>
 <net name="LED" class="0">
 <segment>
-<wire x1="-10.16" y1="55.88" x2="-10.16" y2="50.8" width="0.1524" layer="91"/>
-<label x="-10.16" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PB0(ICP/CLKO/PCINT0)"/>
 <wire x1="195.58" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="198.12" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="0" y1="55.88" x2="0" y2="50.8" width="0.1524" layer="91"/>
+<label x="0" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12745,14 +12745,14 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <label x="198.12" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="55.88" x2="-20.32" y2="50.8" width="0.1524" layer="91"/>
-<label x="-20.32" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="76.2" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 <label x="60.96" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="55.88" x2="-10.16" y2="50.8" width="0.1524" layer="91"/>
+<label x="-10.16" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -12912,14 +12912,14 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <label x="198.12" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="0" y1="55.88" x2="0" y2="50.8" width="0.1524" layer="91"/>
-<label x="0" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="76.2" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 <label x="60.96" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="55.88" x2="-20.32" y2="50.8" width="0.1524" layer="91"/>
+<label x="-20.32" y="50.8" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FLASH_CS" class="0">
