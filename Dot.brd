@@ -18,10 +18,10 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -157,7 +157,7 @@
 <wire x1="25.7790375" y1="32.034965625" x2="0.355078125" y2="32.020209375" width="0" layer="20"/>
 <wire x1="0.355078125" y1="32.020209375" x2="0.360159375" y2="0.516390625" width="0" layer="20"/>
 <dimension x1="-8.26314375" y1="2.548390625" x2="-8.26314375" y2="30.488390625" x3="-3.18314375" y3="16.518390625" textsize="1.778" layer="48"/>
-<text x="21.110071875" y="6.8663625" size="1.016" layer="21" rot="R90" align="center">v1.5</text>
+<text x="21.110071875" y="6.8663625" size="1.016" layer="21" rot="R90" align="center">v1.6</text>
 <dimension x1="24.00611875" y1="32.03465" x2="23.95785625" y2="0.820390625" x3="39.385971875" y3="16.4037" textsize="1.778" layer="48"/>
 <dimension x1="0.380475" y1="0.79325" x2="25.8120625" y2="0.80006875" x3="13.098325" y3="-6.87395" textsize="1.778" layer="48"/>
 <text x="3.93065625" y="19.013171875" size="0.8128" layer="21" rot="SR270" align="center">EEP</text>
@@ -4739,7 +4739,7 @@
 <rectangle x1="25.1714" y1="18.8468" x2="25.5778" y2="18.8722" layer="22" rot="R90"/>
 <rectangle x1="25.1968" y1="11.684" x2="25.6032" y2="11.7094" layer="22" rot="R90"/>
 <rectangle x1="25.3746" y1="11.7094" x2="25.4762" y2="11.7348" layer="22" rot="R90"/>
-<text x="21.0058" y="18.7706" size="1.016" layer="22" rot="MR270">10.2017</text>
+<text x="21.0058" y="18.7706" size="1.016" layer="22" rot="MR270">12.2017</text>
 </plain>
 <libraries>
 <library name="SparkFun">
