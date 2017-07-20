@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18119,6 +18119,9 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <text x="1.778" y="50.8" size="1.27" layer="91">Red</text>
 <text x="-60.96" y="134.62" size="1.778" layer="91">Voltage Divider Lower R</text>
 <text x="-16.129" y="176.022" size="0.8128" layer="91">Use https://goo.gl/ZxW9QR</text>
+<text x="-63.5" y="170.18" size="1.778" layer="91">Use a *Schottky* diode instead of R9
+for Solar-cell powered design</text>
+<text x="-64.77" y="195.58" size="1.778" layer="91">Only needed in solar-powered Design</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
@@ -19052,6 +19055,28 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <wire x1="-16.51" y1="167.64" x2="-17.145" y2="168.275" width="0.1524" layer="91"/>
 <wire x1="-16.51" y1="167.64" x2="-15.875" y2="168.275" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="175.26" x2="-2.54" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="-63.5" y1="167.64" x2="-48.26" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="167.64" x2="-35.56" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="154.94" x2="-35.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="154.94" x2="-38.1" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<wire x1="-66.04" y1="168.91" x2="-6.35" y2="168.91" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="168.91" x2="-6.35" y2="151.13" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="151.13" x2="0" y2="151.13" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="0" y1="151.13" x2="0" y2="194.31" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="0" y1="194.31" x2="-2.54" y2="194.31" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-2.54" y1="194.31" x2="-2.54" y2="171.45" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-2.54" y1="171.45" x2="-21.59" y2="171.45" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-21.59" y1="171.45" x2="-21.59" y2="198.12" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-21.59" y1="198.12" x2="-66.04" y2="198.12" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-66.04" y1="198.12" x2="-66.04" y2="168.91" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 </nets>
