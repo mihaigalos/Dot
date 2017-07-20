@@ -9,14 +9,14 @@
 <grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -26,7 +26,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -163,9 +163,9 @@
 <text x="3.93065625" y="19.013171875" size="0.8128" layer="21" rot="SR270" align="center">EEP</text>
 <text x="13.005415625" y="4.914909375" size="0.8128" layer="21">Temp</text>
 <text x="10.57075625" y="4.37185" size="0.8128" layer="21">9DoF</text>
-<rectangle x1="1.14655625" y1="21.454109375" x2="4.1996375" y2="24.524965625" layer="1"/>
-<text x="2.69341875" y="20.704809375" size="1.016" layer="21" rot="SR180" align="center">HexID</text>
-<rectangle x1="1.13665" y1="21.459775" x2="4.1871875" y2="24.520475" layer="29"/>
+<rectangle x1="1.14655625" y1="21.555709375" x2="4.1996375" y2="24.626565625" layer="1"/>
+<text x="2.69341875" y="20.908009375" size="1.016" layer="21" rot="SR180" align="center">HexID</text>
+<rectangle x1="1.13665" y1="21.561375" x2="4.1871875" y2="24.622075" layer="29"/>
 <text x="1.2024375" y="4.67995" size="0.8128" layer="21">SDA</text>
 <text x="3.783075" y="4.21513125" size="0.8128" layer="21">SCL</text>
 <text x="5.86905" y="4.76618125" size="0.8128" layer="21">3V3</text>
@@ -4740,6 +4740,10 @@
 <rectangle x1="25.1968" y1="11.684" x2="25.6032" y2="11.7094" layer="22" rot="R90"/>
 <rectangle x1="25.3746" y1="11.7094" x2="25.4762" y2="11.7348" layer="22" rot="R90"/>
 <text x="21.0058" y="18.7706" size="1.016" layer="22" rot="MR270">12.2017</text>
+<text x="23.9776" y="21.8948" size="0.8128" layer="21" rot="R90">868Mhz</text>
+<text x="25.1714" y="21.8948" size="0.8128" layer="21" rot="R90">915Mhz</text>
+<rectangle x1="24.257" y1="26.1874" x2="25.1968" y2="27.0764" layer="21"/>
+<rectangle x1="23.2156" y1="26.1874" x2="24.1554" y2="27.0764" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
