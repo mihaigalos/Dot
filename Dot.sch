@@ -17136,101 +17136,6 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 </deviceset>
 </devicesets>
 </library>
-<library name="AT45DB641E">
-<packages>
-<package name="UDFN-8">
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
-<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
-<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
-<circle x="-1" y="1.4" radius="0.2" width="0.127" layer="21"/>
-<text x="-2.4" y="1.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.4" y="3.3" size="1.27" layer="27">&gt;VALUE</text>
-<polygon width="0.127" layer="29">
-<vertex x="-0.6858" y="0.4318"/>
-<vertex x="0.6858" y="0.4318"/>
-<vertex x="0.6858" y="-0.4318"/>
-<vertex x="-0.6858" y="-0.4318"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-0.6858" y="0.4318"/>
-<vertex x="-0.2794" y="0.4318"/>
-<vertex x="-0.2794" y="0.2032"/>
-<vertex x="-0.6858" y="0.2032"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="0.2794" y="0.4318"/>
-<vertex x="0.6858" y="0.4318"/>
-<vertex x="0.6858" y="0.2032"/>
-<vertex x="0.2794" y="0.2032"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="-0.6858" y="-0.2032"/>
-<vertex x="-0.2794" y="-0.2032"/>
-<vertex x="-0.2794" y="-0.4318"/>
-<vertex x="-0.6858" y="-0.4318"/>
-</polygon>
-<polygon width="0.127" layer="31">
-<vertex x="0.2794" y="-0.2286"/>
-<vertex x="0.6858" y="-0.2286"/>
-<vertex x="0.6858" y="-0.4318"/>
-<vertex x="0.2794" y="-0.4318"/>
-</polygon>
-<smd name="1" x="-1.1" y="0.75" dx="0.75" dy="0.25" layer="1"/>
-<smd name="2" x="-1.1" y="0.25" dx="0.75" dy="0.25" layer="1"/>
-<smd name="3" x="-1.1" y="-0.25" dx="0.75" dy="0.25" layer="1"/>
-<smd name="4" x="-1.1" y="-0.75" dx="0.75" dy="0.25" layer="1"/>
-<smd name="5" x="1.1" y="-0.75" dx="0.75" dy="0.25" layer="1"/>
-<smd name="6" x="1.1" y="-0.25" dx="0.75" dy="0.25" layer="1"/>
-<smd name="7" x="1.1" y="0.25" dx="0.75" dy="0.25" layer="1"/>
-<smd name="8" x="1.1" y="0.75" dx="0.75" dy="0.25" layer="1"/>
-<smd name="THERM" x="0" y="0" dx="1.524" dy="1.016" layer="1" rot="R270" stop="no" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="AT45DB641E">
-<pin name="SI" x="0" y="7.62" length="short"/>
-<pin name="SCK" x="0" y="5.08" length="short"/>
-<pin name="NRST" x="0" y="2.54" length="short"/>
-<pin name="CS" x="0" y="0" length="short"/>
-<pin name="WP" x="20.32" y="0" length="short" rot="R180"/>
-<pin name="VCC" x="20.32" y="2.54" length="short" rot="R180"/>
-<pin name="GND" x="20.32" y="5.08" length="short" rot="R180"/>
-<pin name="SO" x="20.32" y="7.62" length="short" rot="R180"/>
-<wire x1="2.54" y1="10.16" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
-<text x="2.54" y="-5.08" size="1.27" layer="94">AT45DB641E</text>
-<pin name="PAD" x="10.16" y="12.7" length="short" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AT45DB641E">
-<gates>
-<gate name="G$1" symbol="AT45DB641E" x="-5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="UDFN-8">
-<connects>
-<connect gate="G$1" pin="CS" pad="4"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="NRST" pad="3"/>
-<connect gate="G$1" pin="PAD" pad="THERM"/>
-<connect gate="G$1" pin="SCK" pad="2"/>
-<connect gate="G$1" pin="SI" pad="1"/>
-<connect gate="G$1" pin="SO" pad="8"/>
-<connect gate="G$1" pin="VCC" pad="6"/>
-<connect gate="G$1" pin="WP" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="LDCL015">
 <packages>
 <package name="SOT23-5">
@@ -18113,6 +18018,95 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="AT25SF081">
+<packages>
+<package name="DFN-2X3">
+<description>&lt;b&gt;8-Lead Plastic Dual Flat No Lead Package (MC)&lt;/b&gt; 2x3x0.9 mm Body (DFN) - Saw Singulated&lt;p&gt;
+Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21796H.pdf</description>
+<wire x1="-1.44" y1="0.96" x2="1.44" y2="0.96" width="0.1016" layer="21"/>
+<wire x1="1.44" y1="-0.96" x2="-1.44" y2="-0.96" width="0.1016" layer="21"/>
+<wire x1="-1.44" y1="0.96" x2="-1.44" y2="-0.96" width="0.1016" layer="51"/>
+<wire x1="1.44" y1="-0.96" x2="1.44" y2="0.96" width="0.1016" layer="51"/>
+<smd name="1" x="-1.325" y="0.75" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="2" x="-1.325" y="0.25" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="3" x="-1.325" y="-0.25" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="4" x="-1.325" y="-0.75" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="5" x="1.325" y="-0.75" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="6" x="1.325" y="-0.25" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="7" x="1.325" y="0.25" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="8" x="1.325" y="0.75" dx="0.7" dy="0.3" layer="1" stop="no" cream="no"/>
+<smd name="EXP" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R90" stop="no" cream="no"/>
+<text x="-2.04" y="1.375" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.84" y="-2.745" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.425" y1="-0.95" x2="-0.2" y2="0" layer="51"/>
+<rectangle x1="-1.725" y1="0.55" x2="-0.925" y2="0.95" layer="29"/>
+<rectangle x1="-1.65" y1="0.6" x2="-1" y2="0.9" layer="31"/>
+<rectangle x1="-1.725" y1="0.05" x2="-0.925" y2="0.45" layer="29"/>
+<rectangle x1="-1.65" y1="0.1" x2="-1" y2="0.4" layer="31"/>
+<rectangle x1="-1.725" y1="-0.45" x2="-0.925" y2="-0.05" layer="29"/>
+<rectangle x1="-1.65" y1="-0.4" x2="-1" y2="-0.1" layer="31"/>
+<rectangle x1="-1.725" y1="-0.95" x2="-0.925" y2="-0.55" layer="29"/>
+<rectangle x1="-1.65" y1="-0.9" x2="-1" y2="-0.6" layer="31"/>
+<rectangle x1="0.925" y1="-0.95" x2="1.725" y2="-0.55" layer="29" rot="R180"/>
+<rectangle x1="1" y1="-0.9" x2="1.65" y2="-0.6" layer="31" rot="R180"/>
+<rectangle x1="0.925" y1="-0.45" x2="1.725" y2="-0.05" layer="29" rot="R180"/>
+<rectangle x1="1" y1="-0.4" x2="1.65" y2="-0.1" layer="31" rot="R180"/>
+<rectangle x1="0.925" y1="0.05" x2="1.725" y2="0.45" layer="29" rot="R180"/>
+<rectangle x1="1" y1="0.1" x2="1.65" y2="0.4" layer="31" rot="R180"/>
+<rectangle x1="0.925" y1="0.55" x2="1.725" y2="0.95" layer="29" rot="R180"/>
+<rectangle x1="1" y1="0.6" x2="1.65" y2="0.9" layer="31" rot="R180"/>
+<rectangle x1="-0.8" y1="-0.7" x2="0.8" y2="0.7" layer="29"/>
+<rectangle x1="-0.725" y1="-0.625" x2="0.725" y2="0.625" layer="31"/>
+<wire x1="-1.397" y1="1.3589" x2="-1.0414" y2="1.3589" width="0.127" layer="21"/>
+<wire x1="-1.0414" y1="1.3589" x2="-1.2065" y2="1.0922" width="0.127" layer="21"/>
+<wire x1="-1.2065" y1="1.0922" x2="-1.397" y2="1.3589" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="1.3589" x2="-1.1938" y2="1.2446" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AT25SF081">
+<pin name="SI" x="30.48" y="0" length="short" rot="R180"/>
+<pin name="SCK" x="30.48" y="2.54" length="short" rot="R180"/>
+<pin name="NHOLD" x="30.48" y="5.08" length="short" rot="R180"/>
+<pin name="CS" x="0" y="7.62" length="short"/>
+<pin name="WP" x="0" y="2.54" length="short"/>
+<pin name="VCC" x="30.48" y="7.62" length="short" rot="R180"/>
+<pin name="GND" x="0" y="0" length="short"/>
+<pin name="SO" x="0" y="5.08" length="short"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="27.94" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-2.54" x2="27.94" y2="10.16" width="0.254" layer="94"/>
+<wire x1="27.94" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="-5.08" size="1.27" layer="94">AT25SF081</text>
+<pin name="PAD" x="15.24" y="12.7" length="short" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AT25SF081">
+<gates>
+<gate name="G$1" symbol="AT25SF081" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DFN-2X3">
+<connects>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="NHOLD" pad="7"/>
+<connect gate="G$1" pin="PAD" pad="EXP"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SI" pad="5"/>
+<connect gate="G$1" pin="SO" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="WP" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18158,7 +18152,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IC2" library="silabs" deviceset="SI114*" device="" technology="5"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="U3" library="SparkFun-Sensors" deviceset="ISL29125" device=""/>
-<part name="C6" library="resistor" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
 <part name="U4" library="SparkFun-Sensors" deviceset="MPU-9250" device="" value="9DoF IMU"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
@@ -18186,7 +18179,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="67Ω"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="U5" library="Seeed-OPL-sensor" deviceset="PRESSURE-BMP180(LGA7)" device="" value="BMP18"/>
-<part name="U$3" library="AT45DB641E" deviceset="AT45DB641E" device=""/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
@@ -18209,13 +18201,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0603"/>
 <part name="SJ3" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
-<part name="SJ6" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="RESONATOR" device="SMD-3.2X1.3"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="C10" library="adafruit" deviceset="CPOL-US" device="CT7343" value="1500uF 4V"/>
 <part name="U$2" library="SparkFun" deviceset="DIODE-ZENER" device="-BZT52"/>
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
+<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
+<part name="U$3" library="AT25SF081" deviceset="AT25SF081" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18259,8 +18252,6 @@ Barometric pressure</text>
 <text x="187.96" y="-25.4" size="1.778" layer="91">Temperature
 Humidity</text>
 <text x="175.26" y="0" size="1.016" layer="91" align="center">TMP102 or TMP112 (high acc +/-0.5°)</text>
-<text x="43.18" y="88.9" size="1.778" layer="91">use AT45DB641E-MHN-Y for starndard page size (1056b/page)
-or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <text x="-24.13" y="50.8" size="1.27" layer="91">Blue</text>
 <text x="-7.62" y="50.8" size="1.27" layer="91" rot="R90">Green</text>
 <text x="1.778" y="50.8" size="1.27" layer="91">Red</text>
@@ -18269,6 +18260,7 @@ or AT45DB641E-MHN2B-T for binary page size (1024b/page)</text>
 <text x="-63.5" y="170.18" size="1.778" layer="91">Use a *Schottky* diode instead of R9
 for Solar-cell powered design</text>
 <text x="-64.77" y="195.58" size="1.778" layer="91">Only needed in solar-powered Design</text>
+<text x="73.66" y="86.36" size="1.778" layer="91">Use AT25SF081-MAHF-T</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
@@ -18309,7 +18301,6 @@ for Solar-cell powered design</text>
 <instance part="IC2" gate="G$1" x="274.32" y="-25.4"/>
 <instance part="SUPPLY20" gate="GND" x="264.16" y="-38.1" rot="MR0"/>
 <instance part="U3" gate="G$1" x="358.14" y="-27.94"/>
-<instance part="C6" gate="G$1" x="337.82" y="-27.94"/>
 <instance part="SUPPLY21" gate="GND" x="337.82" y="-35.56" rot="MR0"/>
 <instance part="U4" gate="G$1" x="78.74" y="-27.94"/>
 <instance part="SUPPLY23" gate="GND" x="60.96" y="-35.56"/>
@@ -18337,11 +18328,10 @@ for Solar-cell powered design</text>
 <instance part="R8" gate="G$1" x="-10.16" y="60.96" rot="R270"/>
 <instance part="+3V14" gate="G$1" x="-10.16" y="81.28"/>
 <instance part="U5" gate="G$1" x="170.18" y="-50.8"/>
-<instance part="U$3" gate="G$1" x="60.96" y="68.58"/>
-<instance part="+3V15" gate="G$1" x="96.52" y="83.82"/>
-<instance part="SUPPLY7" gate="GND" x="91.44" y="73.66" rot="R90"/>
-<instance part="+3V17" gate="G$1" x="48.26" y="78.74"/>
-<instance part="SUPPLY8" gate="GND" x="73.66" y="81.28" rot="R90"/>
+<instance part="+3V15" gate="G$1" x="111.76" y="83.82"/>
+<instance part="SUPPLY7" gate="GND" x="66.04" y="68.58" rot="R270"/>
+<instance part="+3V17" gate="G$1" x="55.88" y="71.12" rot="R90"/>
+<instance part="SUPPLY8" gate="GND" x="45.72" y="93.98" rot="R90"/>
 <instance part="+3V18" gate="G$1" x="154.94" y="-43.18"/>
 <instance part="SUPPLY22" gate="GND" x="166.37" y="-60.96" rot="MR0"/>
 <instance part="SPK1" gate="G$1" x="-43.18" y="60.96" rot="R90"/>
@@ -18361,12 +18351,13 @@ for Solar-cell powered design</text>
 <instance part="R9" gate="G$1" x="-33.02" y="147.32" rot="R90"/>
 <instance part="SJ3" gate="1" x="17.78" y="114.3"/>
 <instance part="C7" gate="G$1" x="66.04" y="129.54" rot="R90"/>
-<instance part="SJ6" gate="1" x="-43.18" y="147.32" rot="R90"/>
 <instance part="Y1" gate="G$1" x="200.66" y="66.04" rot="R90"/>
 <instance part="SUPPLY30" gate="GND" x="208.28" y="63.5"/>
 <instance part="C10" gate="G$1" x="-16.51" y="163.83"/>
 <instance part="U$2" gate="G$1" x="-2.54" y="163.83" rot="R90"/>
 <instance part="JP3" gate="G$1" x="66.04" y="134.62"/>
+<instance part="JP4" gate="G$1" x="-43.18" y="147.32" rot="MR270"/>
+<instance part="U$3" gate="G$1" x="71.12" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -18441,11 +18432,9 @@ for Solar-cell powered design</text>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="337.82" y1="-33.02" x2="347.98" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="-33.02" x2="347.98" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="337.82" y="-33.02"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -18482,13 +18471,9 @@ for Solar-cell powered design</text>
 <wire x1="297.18" y1="127" x2="281.94" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="81.28" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="PAD"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<wire x1="71.12" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
@@ -18754,12 +18739,9 @@ for Solar-cell powered design</text>
 <segment>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$1" pin="VDD"/>
-<wire x1="337.82" y1="-25.4" x2="347.98" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="-25.4" x2="337.82" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="-25.4" x2="347.98" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="327.66" y="-25.4"/>
-<junction x="337.82" y="-25.4"/>
 </segment>
 <segment>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
@@ -18788,16 +18770,19 @@ for Solar-cell powered design</text>
 <junction x="58.42" y="-20.32"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
-<wire x1="81.28" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="71.12" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="76.2" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="U$3" gate="G$1" pin="NHOLD"/>
+<wire x1="101.6" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="73.66" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<junction x="111.76" y="76.2"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="NRST"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<wire x1="60.96" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="71.12" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="WP"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="VDD"/>
@@ -18864,9 +18849,9 @@ for Solar-cell powered design</text>
 <pinref part="JP1" gate="A" pin="10"/>
 </segment>
 <segment>
+<wire x1="101.6" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
+<label x="111.76" y="68.58" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="SI"/>
-<wire x1="60.96" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="58.42" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -18881,9 +18866,9 @@ for Solar-cell powered design</text>
 <pinref part="JP1" gate="A" pin="9"/>
 </segment>
 <segment>
+<wire x1="71.12" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<label x="63.5" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="SO"/>
-<wire x1="81.28" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
-<label x="83.82" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -18915,9 +18900,9 @@ for Solar-cell powered design</text>
 <pinref part="JP1" gate="A" pin="8"/>
 </segment>
 <segment>
+<wire x1="101.6" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<label x="111.76" y="71.12" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="SCK"/>
-<wire x1="60.96" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
-<label x="58.42" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -19036,9 +19021,9 @@ for Solar-cell powered design</text>
 </net>
 <net name="FLASH_CS" class="0">
 <segment>
+<wire x1="71.12" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<label x="63.5" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="CS"/>
-<wire x1="60.96" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
-<label x="58.42" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1PCINT9)"/>
@@ -19094,8 +19079,8 @@ for Solar-cell powered design</text>
 <wire x1="-33.02" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 <junction x="-33.02" y="142.24"/>
 <label x="-27.94" y="142.24" size="1.27" layer="95" xref="yes"/>
-<pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="-43.18" y1="142.24" x2="-33.02" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -19140,9 +19125,9 @@ for Solar-cell powered design</text>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="152.4" x2="-33.02" y2="154.94" width="0.1524" layer="91"/>
 <label x="-33.02" y="154.94" size="1.27" layer="95" xref="yes"/>
-<pinref part="SJ6" gate="1" pin="2"/>
 <wire x1="-43.18" y1="152.4" x2="-33.02" y2="152.4" width="0.1524" layer="91"/>
 <junction x="-33.02" y="152.4"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
