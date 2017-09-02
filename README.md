@@ -8,6 +8,7 @@ Features :
 * RFM12b / RFM69CW Radio module (pin-compatible)
 * On-board ceramic antenna
 * CAT24M010TS EEPROM (128kByte)
+* AT25SF081 Flash (1MByte)
 * Breakout of I2C, SPI and UART-TXD
 * Breakout of ADC Pin with pads for on-board divider resistor
 * Antenna tuning pads for antenna calibration
