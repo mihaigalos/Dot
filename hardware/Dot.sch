@@ -19500,19 +19500,7 @@ for Solar-cell powered design</text>
 <text x="76.2" y="48.26" size="1.27" layer="91">0x50 &amp; 0x51 (a16 bit) / yes</text>
 <text x="48.26" y="78.74" size="1.016" layer="91">D = Direction</text>
 <text x="76.2" y="58.42" size="1.27" layer="91">0x68 / yes</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="-13.97" y="88.9" size="2.54" layer="91">Diff to v1.3</text>
-<text x="-13.462" y="80.01" size="2.1844" layer="91">Corrected RGB Led layout.</text>
-<text x="-12.7" y="73.66" size="2.1844" layer="91">Added 100uF Cap.</text>
+<text x="5.08" y="27.94" size="1.778" layer="91">Ext Oscillator - Low Fuse : 0x5F</text>
 </plain>
 <instances>
 </instances>
